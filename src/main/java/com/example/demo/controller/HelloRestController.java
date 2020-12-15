@@ -38,9 +38,8 @@ public class HelloRestController{
 		return "Hello "+user.firstName+" "+user.lastName;
 	}
 	
-	
 	@PutMapping("/put/{firstName}")
-	public String sayHello(@PathVariable String firstName,@RequestParam("lastName") String lastName) {
+	public String sayHello(@PathVariable String firstName,@RequestParam ("lastName") String lastName) {
 		return "Hello "+firstName+" "+lastName;
 	}
 }
